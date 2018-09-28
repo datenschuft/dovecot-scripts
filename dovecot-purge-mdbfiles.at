@@ -1,0 +1,5 @@
+#!/bin/bash
+# purge mdbfiles on each dovecot mailbox node
+logger "starting dovecotpurge"
+doveadm purge -A
+logger "dovecotpurge finished"
